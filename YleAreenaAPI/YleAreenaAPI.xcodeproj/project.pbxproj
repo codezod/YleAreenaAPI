@@ -10,6 +10,12 @@
 		577546A41C5EA436003C216B /* YleAreenaAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 577546A31C5EA436003C216B /* YleAreenaAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		577546AB1C5EA436003C216B /* YleAreenaAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 577546A01C5EA436003C216B /* YleAreenaAPI.framework */; };
 		577546B01C5EA436003C216B /* YleAreenaAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577546AF1C5EA436003C216B /* YleAreenaAPITests.swift */; };
+		577546BC1C5EA58B003C216B /* YleAreenaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577546BB1C5EA58B003C216B /* YleAreenaAPI.swift */; };
+		577546BE1C5EA62A003C216B /* YleMediaItemQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577546BD1C5EA62A003C216B /* YleMediaItemQuery.swift */; };
+		577546C01C5EA659003C216B /* YleMediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577546BF1C5EA659003C216B /* YleMediaItem.swift */; };
+		577546C21C5EAAD3003C216B /* YleCategoryScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577546C11C5EAAD3003C216B /* YleCategoryScheme.swift */; };
+		577546C41C5EACFB003C216B /* YleCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577546C31C5EACFB003C216B /* YleCategory.swift */; };
+		577546C71C5EAF27003C216B /* NSDate+RFC339.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577546C61C5EAF27003C216B /* NSDate+RFC339.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +35,12 @@
 		577546AA1C5EA436003C216B /* YleAreenaAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YleAreenaAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		577546AF1C5EA436003C216B /* YleAreenaAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YleAreenaAPITests.swift; sourceTree = "<group>"; };
 		577546B11C5EA436003C216B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		577546BB1C5EA58B003C216B /* YleAreenaAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YleAreenaAPI.swift; sourceTree = "<group>"; };
+		577546BD1C5EA62A003C216B /* YleMediaItemQuery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YleMediaItemQuery.swift; sourceTree = "<group>"; };
+		577546BF1C5EA659003C216B /* YleMediaItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YleMediaItem.swift; sourceTree = "<group>"; };
+		577546C11C5EAAD3003C216B /* YleCategoryScheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YleCategoryScheme.swift; sourceTree = "<group>"; };
+		577546C31C5EACFB003C216B /* YleCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YleCategory.swift; sourceTree = "<group>"; };
+		577546C61C5EAF27003C216B /* NSDate+RFC339.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+RFC339.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +83,7 @@
 		577546A21C5EA436003C216B /* YleAreenaAPI */ = {
 			isa = PBXGroup;
 			children = (
+				577546C51C5EAEDE003C216B /* Common */,
 				577546BA1C5EA445003C216B /* Protocol */,
 				577546A31C5EA436003C216B /* YleAreenaAPI.h */,
 				577546A51C5EA436003C216B /* Info.plist */,
@@ -90,8 +103,21 @@
 		577546BA1C5EA445003C216B /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				577546BB1C5EA58B003C216B /* YleAreenaAPI.swift */,
+				577546BD1C5EA62A003C216B /* YleMediaItemQuery.swift */,
+				577546BF1C5EA659003C216B /* YleMediaItem.swift */,
+				577546C11C5EAAD3003C216B /* YleCategoryScheme.swift */,
+				577546C31C5EACFB003C216B /* YleCategory.swift */,
 			);
 			name = Protocol;
+			sourceTree = "<group>";
+		};
+		577546C51C5EAEDE003C216B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				577546C61C5EAF27003C216B /* NSDate+RFC339.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +228,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				577546C01C5EA659003C216B /* YleMediaItem.swift in Sources */,
+				577546BC1C5EA58B003C216B /* YleAreenaAPI.swift in Sources */,
+				577546C71C5EAF27003C216B /* NSDate+RFC339.swift in Sources */,
+				577546BE1C5EA62A003C216B /* YleMediaItemQuery.swift in Sources */,
+				577546C41C5EACFB003C216B /* YleCategory.swift in Sources */,
+				577546C21C5EAAD3003C216B /* YleCategoryScheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +346,7 @@
 		577546B51C5EA436003C216B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -324,12 +357,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.vanhalat.YleAreenaAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		577546B61C5EA436003C216B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
