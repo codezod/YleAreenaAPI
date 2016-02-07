@@ -21,9 +21,21 @@ class YleAreenaAPITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testGetQueryLine() {
+        var itemQuery = YleMediaItemQuery()
+        itemQuery.ids.append("id1")
+        
+        var queryString = itemQuery.toQueryLine("https://external.api.yle.fi")
+        XCTAssert(queryString == "https://external.api.yle.fi?id=id1", "Initial query string not correct")
+        
+        itemQuery.ids.append("id2")
+        queryString = itemQuery.toQueryLine("https://external.api.yle.fi")
+        XCTAssert(queryString.containsString("id=id1,id2"), "Multiple ids not appended correctly")
+        
+        itemQuery.availability = YleMediaAvailability.InFuture
+        queryString = itemQuery.toQueryLine("https://external.api.yle.fi")
+        XCTAssert(queryString.containsString("&availability=in-future"), "Query string not correct")
+        
     }
     
     func testPerformanceExample() {

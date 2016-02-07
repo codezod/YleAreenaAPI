@@ -9,8 +9,15 @@
 import Foundation
 
 struct YleMediaItemQuery {
+    
+    init(){
+        ids = [String]()
+        categories = [YleCategory]()
+        series = [String]()
+        contentprotection = [String]()
+    }
 
-    var ids : [String]?
+    var ids : [String]
     
     var type : YleMediaItemType?
     
@@ -18,9 +25,9 @@ struct YleMediaItemQuery {
     
     var mediaobject : YleMediaObjectType?
     
-    var category : YleCategory?
+    var categories : [YleCategory]
     
-    var series : [String]?
+    var series : [String]
     
     var availability : YleMediaAvailability?
     
@@ -34,7 +41,7 @@ struct YleMediaItemQuery {
     
     var publisher : String?
     
-    var contentprotection : [String]?
+    var contentprotection : [String]
     
     var order : YleOrderType?
     

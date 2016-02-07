@@ -10,10 +10,13 @@ import Foundation
 
 class YleCategory {
     
-    init(id: String, inScheme: String, indexDataModified: NSDate){
+    init(id: String, inScheme: String, indexDataModified: NSDate, key : String, title : [Language: String], type : String){
         self.id = id
         self.inScheme = inScheme
         self.indexDataModified = indexDataModified
+        self.key = key
+        self.title = title
+        self.type = type
     }
     
     var id: String
@@ -21,4 +24,10 @@ class YleCategory {
     var inScheme: String
     
     var indexDataModified:  NSDate
+    
+    var key : String
+    
+    var title : [Language: String]
+    
+    var type : String
 }
